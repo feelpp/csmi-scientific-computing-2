@@ -1,0 +1,57 @@
+= Homework on Solution Strategies for a ThermoElectric Model
+:toc: left
+:author: Christophe Prud'homme
+:stem: latemath
+
+We consider the thermo-electric Model described in
+http://book.feelpp.org/toolbox/thermoelectric/ and the associated
+testcase from LNCMI.
+
+== Installation
+
+First you need to install the files on Atlas on your account
+execute the following command on Atlas. It will
+ - clone ypur git repository
+ - add the data files required for the homework
+
+[source,shell]
+----
+
+----
+
+== Homework
+
+We are interested in finding what is the best strategy and have a
+comparison between the strategies in terms of timing and number of
+iterations when varying the following parameters:
+
+* Mesh size, you have three different meshes sizes (`-coarse`,
+`-medium`, `-fine`)
+* Polynomial order, you have two polymmial orders : 1 and 2
+* Number of processors, you have access to Atlas cluster up to 96 cores.
+
+In order to achieve this study, you will need to use the Atlas Cluster,
+a script `cs.slurm` is provided to be able to execute the code on Atlas
+using Slurm as a job sheduler. _Hint:_ you will have to use `sbatch` to
+submit the jobs.
+
+You will
+
+* study and explain what the script does;
+* explain how to change the script and possible the Feel++ configuration
+file in order to run the study proposed hereafter.
+
+You will use this documentation http://book.feelpp.org/clusters/atlas/
+and this one https://gitlab.math.unistra.fr/atlas/cluster-doc/wikis/home
+as well as any other documentation you may find to explain. The
+explanations should not take much more than one page.
+
+Use the range of solver and preconditioners (`jacobi`, `bjacobi`, `sor`,
+`ilu`, `icc`, `asm`, `gasm`, `gamg`. Provide a brief description for
+each preconditioner. A complete list of preconditioner is available
+herefootnote:[http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/PC/PCType.html]
+)seen in the course to do that. Try to elaborate some explanations
+regarding the performances of your strategies and relate them to the
+expected theoretival behavior of these strategies.
+
+For the best strategy, provide a speedup study.
