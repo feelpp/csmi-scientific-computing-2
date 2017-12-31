@@ -7,6 +7,8 @@ We consider the thermo-electric Model described in
 http://book.feelpp.org/toolbox/thermoelectric/ and the associated
 testcase from LNCMI.
 
+This homework should not take more than 4hours of your time.
+
 == Installation
 
 First you need to install the files on Atlas on your account
