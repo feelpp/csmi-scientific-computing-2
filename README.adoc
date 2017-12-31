@@ -10,11 +10,15 @@ testcase from LNCMI.
 == Installation
 
 First you need to install the files on Atlas on your account
-execute the following command on Atlas. 
+execute the following commands on Atlas. 
 
 [source,shell]
 ----
-bash -c $(curl -L https://raw.githubusercontent.com/feelpp/csmi-scientific-computing-2/master/install.sh) cs <your github login>
+# define GITHUB_USER_LOGIN in your shell environment
+export GITHUB_USER_LOGIN=<your github login>
+
+# execute script to install the 
+bash -c $(curl -L https://raw.githubusercontent.com/feelpp/csmi-scientific-computing-2/master/install.sh) cs ${GITHUB_USER_LOGIN}
 ----
 
 It will
@@ -59,3 +63,9 @@ regarding the performances of your strategies and relate them to the
 expected theoretival behavior of these strategies.
 
 For the best strategy, provide a speedup study.
+
+== Report
+
+You write the report in asciidoc and upload it to the github repository assigned to you.
+Use the table features of asciidoc, see eg link:http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#tables[asciidoc  documentation].
+Do not forget that the report should be generated properly with the link:http://asciidoctor.org/news/2013/09/18/introducing-asciidoctor-js-live-preview/[ascidoctor-js plugin] installed on your browser(chrome or firefox). That is how I will be able to review your work.
