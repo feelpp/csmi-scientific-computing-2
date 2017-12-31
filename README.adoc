@@ -22,9 +22,10 @@ bash -c $(curl -L https://raw.githubusercontent.com/feelpp/csmi-scientific-compu
 ----
 
 It will
- - create a directory `/ssd/${USER}/feel/cs/`
- - clone your git repository in `csmi-scientific-computing-2-${GITHUB_USER_LOGIN}`
- - copy the data files (Feel++ mesh and config  files) required for the homework in the directory `/ssd/${USER}/feel/cs/HL-31_H1`
+
+* create a directory `/ssd/${USER}/feel/cs/`
+* clone your git repository in `csmi-scientific-computing-2-${GITHUB_USER_LOGIN}`
+* copy the data files (Feel++ mesh and config  files) required for the homework in the directory `/ssd/${USER}/feel/cs/HL-31_H1`
 
 
 == Homework
@@ -43,10 +44,12 @@ a script `cs.slurm` is provided to be able to execute the code on Atlas
 using Slurm as a job sheduler. _Hint:_ you will have to use `sbatch` to
 submit the jobs.
 
+=== Job scheduling study
+
 You will
 
 * study and explain what the script does;
-* explain how to change the script and possible the Feel++ configuration
+* explain how to change the script and possibly the Feel++ configuration
 file in order to run the study proposed hereafter.
 
 You will use this documentation http://book.feelpp.org/clusters/atlas/
@@ -54,15 +57,19 @@ and this one https://gitlab.math.unistra.fr/atlas/cluster-doc/wikis/home
 as well as any other documentation you may find to explain. The
 explanations should not take much more than one page.
 
-Use the range of solver and preconditioners (`jacobi`, `bjacobi`, `sor`,
-`ilu`, `icc`, `asm`, `gasm`, `gamg`. Provide a brief description for
-each preconditioner. A complete list of preconditioner is available
-herefootnote:[http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/PC/PCType.html]
-)seen in the course to do that. Try to elaborate some explanations
-regarding the performances of your strategies and relate them to the
-expected theoretival behavior of these strategies.
+=== Preconditioner study
 
-For the best strategy, provide a speedup study.
+Use the range of preconditioners (`jacobi`, `bjacobi`, `sor`,
+`ilu`, `icc`, `asm`, `gasm`, `gamg`).
+
+* Provide a brief description for each preconditioner. 
+* Try to elaborate some explanations regarding the performances of your strategies and relate them to the
+expected theoretival behavior of these strategies.
+* For the best strategy, provide a speedup study.
+
+A complete list of preconditioner is available
+herefootnote:[http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/PC/PCType.html]
+)seen in the course to do that.
 
 == Report
 
