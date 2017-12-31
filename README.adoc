@@ -10,14 +10,18 @@ testcase from LNCMI.
 == Installation
 
 First you need to install the files on Atlas on your account
-execute the following command on Atlas. It will
- - clone ypur git repository
- - add the data files required for the homework
+execute the following command on Atlas. 
 
 [source,shell]
 ----
-
+bash -c $(curl -L https://raw.githubusercontent.com/feelpp/csmi-scientific-computing-2/master/install.sh) cs <your github login>
 ----
+
+It will
+ - create a directory `/ssd/${USER}/feel/cs/`
+ - clone your git repository in `csmi-scientific-computing-2-${GITHUB_USER_LOGIN}`
+ - copy the data files (Feel++ mesh and config  files) required for the homework in the directory `/ssd/${USER}/feel/cs/HL-31_H1`
+
 
 == Homework
 
