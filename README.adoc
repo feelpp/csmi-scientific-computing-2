@@ -15,8 +15,8 @@ NOTE: This homework should not take more than 4 hours of your time.
 
 == Installation
 
-First you need to install the files on Atlas on your account
-execute the following commands on Atlas. 
+First you need to install the files on Atlas on your account.
+Execute the following commands on Atlas. 
 
 [source,shell]
 ----
@@ -69,7 +69,7 @@ Use the range of preconditioners (`jacobi`, `bjacobi`, `sor`,
 
 * Provide a brief description for each preconditioner. 
 * Try to elaborate some explanations regarding the performances of your strategies and relate them to the
-expected theoretival behavior of these strategies.
+expected theoretical behavior of these strategies.
 * For the best strategy, provide a speedup study.
 
 NOTE: A complete list of preconditioner is available link:http://www.mcs.anl.gov/petsc/petsc-current/docs/manualpages/PC/PCType.html[here].
